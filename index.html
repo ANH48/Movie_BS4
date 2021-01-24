@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Movie</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./movie/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  </head>
+  <body>
+      <!-- HEADER -->
+      <header class="container">
+          <p class="text-right mb-0">
+            <i class="bi bi-telephone-fill"></i>
+            <span class="border-right mx-2 pr-2">03301234567</span>
+            <i class="bi bi-search"></i>
+            </p>
+            <nav class="navbar navbar-expand-md navbar-dark py-0 mx-0 px-0">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="movie/img/logo.svg">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMovie" aria-controls="navbarMovie" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse " id="navbarMovie">
+                  <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item active active_on">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">What 's on</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">Shortcodes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                      </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+      </header>
+      <!-- CAROUSEL -->
+      <section id="carousel">
+              <!-- slide tự động chạy  -->
+              <!-- data-ride="carousel" -->
+              <div id="carouselMovie" class="carousel slide">
+                <ol class="carousel-indicators justify-content-start">
+                  <li data-target="#carouselMovie" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselMovie" data-slide-to="1"></li>
+                  <li data-target="#carouselMovie" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="img-fluid" src="./movie/img/hero-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block container title row">
+                      <div class="col-sm-12 col-md-9">
+                        <p>ACTION, ADVENTURE, FANTASY</p>
+                        <h5>End of the World: Part II</h5>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
+                        <div> <span class="pg">PG</span><button class="btn btn-trailer"><span><i class="bi bi-play-fill"></i>Play Trailer</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="img-fluid" src="./movie/img/hero-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block container title row">
+                      <div class="col-sm-12 col-md-9">
+                        <p>ACTION, ADVENTURE, FANTASY</p>
+                        <h5>End of the World: Part II</h5>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
+                        <div> <span class="pg">PG</span><button class="btn btn-trailer"><span><i class="bi bi-play-fill"></i>Play Trailer</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="img-fluid" src="./movie/img/hero-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block container title row">
+                      <div class="col-sm-12 col-md-9">
+                        <p>ACTION, ADVENTURE, FANTASY</p>
+                        <h5>End of the World: Part II</h5>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
+                        <div> <span class="pg">PG</span><button class="btn btn-trailer"><span><i class="bi bi-play-fill"></i>Play Trailer</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a> -->
+              </div>
+      </section>
+      <!-- NEWIN  -->
+      <section id="newIn"  class="container newIn">
+        
+        <h2>NEW IN</h2>
+        <div class="newwIn__content my-5">
+            <!-- row: display: flex -->
+            <div class="row">
+                <div class="col-12 col-md-3 col-sm-6 col-12">
+                    <div class="newIn_img">
+                      <img class="img-fluid" src="./movie/img/movie-1.jpg" alt="">
+                     <div class="newIn_moviePlay"></div> 
+                      <div class="newIn_poster">
+                        <div>
+                          <a href="https://youtu.be/d96cjJhvlMA" data-vbtype="video" class="venobox play vbox-item" tabindex="0">
+                          <i class="bi bi-play-fill"></i>
+                          </a>
+                          <a href="single-movie.html" class="read-more" tabindex="0">read more</a>
+                          <span class="date">Released: 7 Mar, 2017</span>
+                          </div>
+                          </div>
+                    </div>
+                    <div class="newIn__name">
+                      <p>The last post</p>
+                      <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-sm-6 col-12">
+                  <div class="newIn_img">
+                   <div class="newIn_moviePlay"></div> <img class="img-fluid" src="./movie/img/movie-2.jpg" alt="">
+                    <div class="newIn_poster">
+                      <div>
+                        <a href="https://youtu.be/d96cjJhvlMA" data-vbtype="video" class="venobox play vbox-item" tabindex="0">
+                        <i class="bi bi-play-fill"></i>
+                        </a>
+                        <a href="single-movie.html" class="read-more" tabindex="0">read more</a>
+                        <span class="date">Released: 7 Mar, 2017</span>
+                        </div>
+                        </div>
+                  </div>
+                  <div class="newIn__name">
+                    <p>The last post</p>
+                    <div class="star">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-3 col-sm-6 col-12">
+                <div class="newIn_img">
+                 <div class="newIn_moviePlay"></div> <img class="img-fluid" src="./movie/img/movie-3.jpg" alt="">
+                  <div class="newIn_poster">
+                    <div>
+                        <a href="https://youtu.be/d96cjJhvlMA" data-vbtype="video" class="venobox play vbox-item" tabindex="0">
+                        <i class="bi bi-play-fill"></i>
+                        </a>
+                        <a href="single-movie.html" class="read-more" tabindex="0">read more</a>
+                        <span class="date">Released: 7 Mar, 2017</span>
+                      </div>
+                      </div>
+                </div>
+                <div class="newIn__name">
+                  <p>The last post</p>
+                  <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6 col-12">
+              <div class="newIn_img">
+               <div class="newIn_moviePlay"></div> <img class="img-fluid" src="./movie/img/movie-4.jpg" alt="">
+                <div class="newIn_poster">
+                  <div>
+                    <a href="https://youtu.be/d96cjJhvlMA" data-vbtype="video" class="venobox play vbox-item" tabindex="0">
+                    <i class="bi bi-play-fill"></i>
+                    </a>
+                    <a href="single-movie.html" class="read-more" tabindex="0">read more</a>
+                    <span class="date">Released: 7 Mar, 2017</span>
+                    </div>
+                    </div>
+              </div>
+              <div class="newIn__name">
+                <p>The last post</p>
+                <div class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+          </div>
+            </div>
+        </div>
+      </section>
+      <!-- SHOW TIME -->
+      <section id="showTime" class="">
+        <div class="showTime container">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link " id="home-tab" data-toggle="tab" href="#MON" role="tab" aria-controls="home" aria-selected="true">MON</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#TUE" role="tab" aria-controls="TUE" aria-selected="false">TUE</a>
+            </li>
+            <li class="nav-item " role="presentation">
+              <a class="nav-link  active underline_none " id="contact-tab" data-toggle="tab" href="#TODAY" role="tab" aria-controls="contact" aria-selected="false">TODAY</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#THU" role="tab" aria-controls="contact" aria-selected="false">THU</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#FRI" role="tab" aria-controls="contact" aria-selected="false">FRI</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#SAT" role="tab" aria-controls="contact" aria-selected="false">SAT</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#SUN" role="tab" aria-controls="contact" aria-selected="false">SUN</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade  " id="MON" role="tabpanel" aria-labelledby="contact-tab">
+              <!-- MON -->
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-1.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="row py-5 content content_line content_line_end">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-2.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade  " id="TUE" role="tabpanel" aria-labelledby="contact-tab">
+              <!-- TUE -->
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-3.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="row py-5 content content_line content_line_end">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-4.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade show active" id="TODAY" role="tabpanel" aria-labelledby="contact-tab">
+              <!-- TODAY -->
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-4.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="row py-5 content content_line content_line_end">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-4.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="THU" role="tabpanel" aria-labelledby="contact-tab">
+              <!-- THU -->
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-7.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-9.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="row py-5 content content_line content_line_end">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-4.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="FRI" role="tabpanel" aria-labelledby="contact-tab">
+              <!-- FRI -->
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-4.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-5.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-6.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <div class="row py-5 content content_line content_line_end">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-4.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="SAT" role="tabpanel" aria-labelledby="contact-tab">
+              <!-- SAT -->
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-9.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-10.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-5 content content_line content_line_end">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-11.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="SUN" role="tabpanel" aria-labelledby="contact-tab">
+              <!-- SUN -->
+              <!-- 1  -->
+              <div class="row py-5 content content_line">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-12.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2  -->
+              <div class="row py-5 content content_line content_line_end">
+                <div class="col-md- col-xl-2">
+                  <img class="img-fluid" src="./movie/img/movie-13.jpg" alt="">
+                </div>
+                <div class="ShowTime__name col-md-9 col-xl-10">
+                  <p class="my-0">ACTION, ADVENTURE, FANTASY</p>
+                  <h1 class="name__title mb-2">It's over</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                  <p class="mb-4">
+                    <a href="single-movie.html" class="arrow-button ">Full synopsis</a>
+                  </p>
+                  <div class="row time">
+                    <div class="col-md-9 col-xl-8">
+                      <span class="viewing-times"><i class="bi bi-clock"></i></i>Viewing times</span>
+                      <button type="button" class="btn btn-dis" disabled>10:00</button>
+                      <button type="button" class="btn btn-secondary">14:00</button>
+                      <button type="button" class="btn btn-secondary">16:00</button>
+                      <button type="button" class="btn btn-secondary">20:30</button>
+                    </div>
+                    <div class="col-md-3 col-xl-4 text-right ">
+                      <span class="running-times ">105 MINS</span>
+                      <span class="rounded-circle" >15</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- COMING SOON -->
+      <section id="comingSoon" class="coming">
+        <div class="container">
+          <h2>COMING SOON</h2>
+          <div class="row content">
+            <div class="col-12 col-xl-6">
+              <div class="comming__detail">
+                <p>DRAMA, THRILLER</p>
+                <h3 class="name__title">Deepwater Horizon</h3>
+                <p class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="comming__Date ml-4">
+                    <i class="bi bi-calendar2-week"></i>
+                    3- Septembr, 2017 
+                  </span>
+                </p>
+                <p>A dramatization of the April 2010 disaster, when the offshore drilling rig Deepwater Horizon exploded and created the worst oil spill in U.S. history.
+                </p>
+                <p class="more">
+                  <a href="single-movie.html" class="read-more" tabindex="0">MORE INFO ></a>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6">
+              <div class="coming_trailer">
+                <img class="img-fluid" src="./movie/img/slide-3-video.png">
+                <i class="bi bi-play-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="listMovie">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-xl-2 item_movie active active_rp">
+                <div class="img-movie">
+                    <img class="img-fluid" src="./movie/img/movie-11.jpg" alt="">
+                </div>
+                <div class="content__Movie">
+                  <div>
+                    <h4>Too Fast</h4>
+                  <span class="release-date">07 September 2007</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-2 item_movie active_rp">
+                <div class="img-movie">
+                    <img class="img-fluid" src="./movie/img/movie-12.jpg" alt="">
+                </div>
+                <div class="content__Movie ">
+                  <div>
+                    <h4>Too Fast</h4>
+                  <span class="release-date">07 September 2007</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-2  item_movie">
+                <div class="img-movie">
+                    <img class="img-fluid" src="./movie/img/movie-13.jpg" alt="">
+                </div>
+                <div class="content__Movie">
+                  <div>
+                    <h4>Too Fast</h4>
+                  <span class="release-date">07 September 2007</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-2 item_movie">
+                <div class="img-movie">
+                    <img class="img-fluid" src="./movie/img/movie-14.jpg" alt="">
+                </div>
+                <div class="content__Movie">
+                  <div>
+                    <h4>Too Fast</h4>
+                  <span class="release-date">07 September 2007</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-2 item_movie">
+                <div class="img-movie">
+                    <img class="img-fluid" src="./movie/img/movie-8.jpg" alt="">
+                </div>
+                <div class="content__Movie">
+                  <div>
+                    <h4>Too Fast</h4>
+                  <span class="release-date">07 September 2007</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-xl-2 item_movie">
+                <div class="img-movie">
+                    <img class="img-fluid" src="./movie/img/movie-9.jpg" alt="">
+                </div>
+                <div class="content__Movie">
+                  <div>
+                    <h4>Too Fast</h4>
+                  <span class="release-date">07 September 2007</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="contact">
+          <div class="row">
+            <div class="col-sm-12 cta">
+              <p>Need help? Contact our support team on</p>
+              <p class="gradient-text">0330 123 4567</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-3">
+                  <h6>Get in touch</h6>
+                  <ul>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Give us feedback</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  </ul>
+              </div>
+              <div class="col-12 col-md-3">
+                  <h6>ABOUT MOVIE STAR</h6>
+                  <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Find us</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">News</a></li>
+                    </ul>
+              </div>
+              <div class="col-12 col-md-3">
+                  <h6>LEGAL STUFF</h6>
+                  <ul>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Cookie policy</a></li>
+                    </ul>
+              </div>
+              <div class="col-12 col-md-3">
+                  <h6>CONNECT WITH US</h6>
+                  <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Give us feedback</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="copyright">
+                <p>2017 © Movie Star / <a href="https://www.klevermedia.co.uk">Web design by Klever media</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- slim : chỉ dùng được với các thư viện mới  
+          dùng file min để hỗ trơ cho các thư viện cả cũ lẫn mới-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>
