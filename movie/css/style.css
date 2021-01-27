@@ -5,6 +5,7 @@
 /* <!-- HEADER --> */
 * {
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
 header {
     position: absolute;
@@ -80,7 +81,7 @@ header .text-right {
 /* CAROUSEL */
 #carouselMovie .carousel-item .carousel-caption {
     transform: translate(-50%,-50%);
-    top: 56%;
+    top: 50%;
     left: 50%; 
     text-align: left;
 }
@@ -139,7 +140,7 @@ header .text-right {
     display: inline-flex;
     vertical-align: middle;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 #carouselMovie .carousel-item .carousel-caption button.btn-trailer::before {
     background-color: #ec7532;
@@ -514,7 +515,6 @@ header .text-right {
 }
 .coming .content {
     color: #FFF;
-    padding-right: 30px;
 }
 .coming .content p{
     font-size: 14px;
@@ -612,7 +612,9 @@ header .text-right {
     text-align: center;
 
 }
-
+#comingSoon .item_movie {
+    display: block;
+}
 /* FOOTER  CONTACT*/
 .cta {
     text-align: center;
@@ -716,27 +718,133 @@ footer .copyright a:hover{
     color: #fbbd61;
 
 }
-
-/*Ipad ngang(1024 x 768)*/
-@media screen and (max-width: 1024px){
-    #navbarMovie  .navbar-nav .nav-item a {
-        font-size: 0.7rem;
-        font-weight: 400;
-        line-height: .7em;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        display: inline-block;
-        padding: 10px 10px;
-        color: #FFF;
-    }
+.display_none {
+    display: block;
+}
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+    
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
     #carouselMovie .carousel-inner .carousel-item img {
-        width: 180%;
+        width: 480%; 
         /* height: 920px; */
-        height: 768px;
+        height: 700px;
+    }
+    #carousel .carousel-indicators {
+        bottom: 0px;
+        left: -30px;
+    }
+    .newIn .newIn_img img {
+        display: block;
+        width: 100%;
+    }
+    .display_none {
+        display: none;
+    }
+    #showTime .showTime .nav{
+        flex-direction: column;
+    }
+    .showTime .nav-tabs .nav-link::after {
+        display: none;
+    }
+    .showTime .nav-tabs .nav-link.active::after {
+        display: none;
+    }
+    .showTime .nav-tabs .nav-link.active::before {
+        content: '';
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to bottom, #fbbd61, #ec7532);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .showTime .nav-tabs .nav-link::before {
+        content: '';
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(to bottom, #fbbd61, #ec7532);
+        
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        height: 0;
+        transition: all .25s ease-in-out;;
+    }
+    .showTime .nav-tabs .nav-link {
+        position: relative;
+        padding: 10px 30px;
+        height: 100%;
+    }
+    .showTime .nav-tabs .nav-link:hover::before{
+        height: 100%;
+    }
+    .showTime .nav-tabs {
+        border: none;
+    }
+    .showTime .nav-tabs .nav-item.show a.nav-link, .showTime .nav-tabs a.nav-link.active, .showTime .nav-tabs .nav-item a.nav-link{
+        font-weight: 300;
+    }
+    .showTime .content img{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .showTime .text-right {
+        text-align: left !important;
+    }
+    .showTime .time span.viewing-times{
+        display: block;
+        margin-bottom: 25px;
+    }
+    .showTime .time span.running-times, .showTime .time span.rounded-circle {
+        margin-top: 25px;
+    }
+    #comingSoon .coming_trailer img {
+        width: 100%;
+        display: block;
+    }
+    #comingSoon .item_movie {
+        display: none;
+    }
+    #comingSoon  .listMovie .active_rp {
+        display: block;
+    }
+    footer h6 {
+        margin-top: 20px;
+    }
+    footer .copyright {
+        padding-top: 20px;
+        margin-top: 10px;
+        padding-left: 10px;
+        
     }
 }
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){
+    /* #carouselMovie .carousel-inner .carousel-item img {
+        width: 280%; */
+        /* height: 920px; */
+        /* height: 480px;
+    } */
+    /* img {
+        width: 100%;
+    }
+    .item_movie {
+        display: none;
+    }
+    .item_movie.active_rp{
+        display: block;
+    }
+    footer h6 {
+        margin-top: 10px;
+    } */
+   
+}
 /*Ipad dọc(768 x 1024)*/
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     #navbarMovie  .navbar-nav .nav-item a {
         font-size: 0.7rem;
         font-weight: 400;
@@ -748,9 +856,12 @@ footer .copyright a:hover{
         color: #FFF;
     }
     #carouselMovie .carousel-inner .carousel-item img {
-        width: 180%;
-        /* height: 920px; */
-        height: 768px;
+        width: 180%; 
+        height: 920px;
+         height: 768px;
+    }
+    #showTime p {
+        padding-bottom: 10px;
     }
     .ShowTime__name  .time span, .ShowTime__name  .time button {
         margin: 0px;
@@ -762,24 +873,130 @@ footer .copyright a:hover{
     .coming .content .comming__detail {
         padding-top: 0;
     }
-}
-/*Tablet nhỏ(480 x 640)*/
-@media screen and (max-width: 480px){
-    #carouselMovie .carousel-inner .carousel-item img {
-        width: 280%;
-        /* height: 920px; */
-        height: 480px;
-    }
-    img {
-        width: 100%;
-    }
-    .item_movie {
-        display: none;
-    }
-    .item_movie.active_rp{
+    #newIn .newwIn__content .display_none {
         display: block;
     }
-    footer h6 {
-        margin-top: 10px;
+    .newIn .newIn_img .newIn_poster i {
+        margin-left: 0%;
+    }
+
+    #showTime .showTime .nav{
+        flex-direction: row;
+    }
+    .showTime .nav-tabs .nav-link::after {
+        display: block;
+    }
+    .showTime .nav-tabs .nav-link.active::after {
+        display: block;
+    }
+    .showTime .nav-tabs .nav-link::before {
+        display: none;
+    }
+    .showTime .nav-tabs .nav-link.active::before {
+        display: none;
+    }
+    .showTime .nav-tabs .nav-link {
+        position: relative;
+        padding: 10px 30px;
+        width: 100%;
+    }
+    .showTime .nav-tabs .nav-link:hover::before{
+        width: 100%;
+    }
+    .showTime .text-right {
+        text-align: right !important;
+    }
+    .showTime .time span.viewing-times{
+        display: inline;
+        font-size: 10px;
+
+    }
+    .showTime .content .ShowTime__name .time .running-times {
+        font-size: 10px;
+    }
+    .showTime .content .ShowTime__name .time button {
+        margin-left: -5px;
+        padding: 7px 7px;
+        font-size: 10px;
+    }
+    .showTime .time span.running-times, .showTime .time span.rounded-circle {
+        margin-top: 0px;
+    }
+    #comingSoon .coming_trailer img {
+        width: 100%;
+        display: block;
+    }
+    .showTime .nav-tabs {
+        border-bottom: 1px solid #d8d8d8;
+    }
+    #comingSoon p {
+        margin: 0;
+    }
+    .coming .content .name__title {
+        font-size: 27px;
+        margin-bottom: 0;
+    }
+    #comingSoon .comming__detail p.star {
+        margin-bottom: 10px;
+    }
+    #comingSoon .listMovie .item_movie {
+        display: block;
+    }
+    #comingSoon .listMovie .item_movie.active_rp_ipad {
+        display: none;
+    }
+    .contact .gradient-text {
+        font-family:'Times New Roman', Times, serif;
+    }
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+    #navbarMovie  .navbar-nav .nav-item a {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 15px 23px;
+        color: #FFF;
+    }
+    #carouselMovie .carousel-inner .carousel-item img {
+        width: 180%;
+        height: 920px;
+    }
+    #carouselMovie .carousel-item .carousel-caption {
+        top:56%;
+    }
+    .newIn .newIn_img .newIn_poster i{
+        margin-left: 20%;
+    }
+    .showTime .nav-tabs .nav-link {
+        position: relative;
+        padding: 10px 30px;
+        width: 100%;
+    }
+    .showTime .nav-tabs .nav-link:hover::after{
+        width: 100%;
+    }
+    .showTime .content .ShowTime__name .time button {
+        padding: 7px 10px;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .showTime .time span.viewing-times {
+        font-size: 12px;
+    }
+    .showTime .content .ShowTime__name .time .running-times {
+        font-size: 15px;
+    }
+    .coming .content .comming__detail {
+        padding-top: 35px;
+    }
+    #comingSoon p {
+        margin: 15px 0;
+    }
+    #comingSoon .listMovie .item_movie.active_rp_ipad {
+        display: block;
     }
 }
